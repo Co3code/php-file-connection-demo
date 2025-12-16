@@ -1,8 +1,10 @@
-CREATE DATABASE test_db;
+
 
 USE test_db;
 
-CREATE TABLE users (
+
+CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(100)
+    email VARCHAR(100) NOT NULL
 );
+
